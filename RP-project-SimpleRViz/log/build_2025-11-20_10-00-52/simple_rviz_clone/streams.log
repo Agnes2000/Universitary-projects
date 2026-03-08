@@ -1,0 +1,29 @@
+[0.013s] Invoking command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone -- -j6 -l6
+[0.067s] [35m[1mConsolidate compiler generated dependencies of target simple_rviz_node[0m
+[0.090s] [ 33%] [32mBuilding CXX object CMakeFiles/simple_rviz_node.dir/src/main.cpp.o[0m
+[8.193s] [ 66%] [32m[1mLinking CXX executable simple_rviz_node[0m
+[9.181s] [100%] Built target simple_rviz_node
+[9.195s] Invoked command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone -- -j6 -l6
+[9.204s] Invoking command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone
+[9.212s] -- Install configuration: ""
+[9.212s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node
+[9.216s] -- Set runtime path of "/home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node" to ""
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include/
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone/visualizer.hpp
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/package_run_dependencies/simple_rviz_clone
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/parent_prefix_path/simple_rviz_clone
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.sh
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.dsv
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.sh
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.dsv
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.bash
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.sh
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.zsh
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.dsv
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.dsv
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/packages/simple_rviz_clone
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig.cmake
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig-version.cmake
+[9.216s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.xml
+[9.220s] Invoked command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone

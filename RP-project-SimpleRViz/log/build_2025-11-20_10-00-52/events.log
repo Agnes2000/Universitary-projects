@@ -1,0 +1,119 @@
+[0.000000] (-) TimerEvent: {}
+[0.001884] (simple_rviz_clone) JobQueued: {'identifier': 'simple_rviz_clone', 'dependencies': OrderedDict()}
+[0.001985] (simple_rviz_clone) JobStarted: {'identifier': 'simple_rviz_clone'}
+[0.010891] (simple_rviz_clone) JobProgress: {'identifier': 'simple_rviz_clone', 'progress': 'cmake'}
+[0.013662] (simple_rviz_clone) JobProgress: {'identifier': 'simple_rviz_clone', 'progress': 'build'}
+[0.013695] (simple_rviz_clone) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone', '--', '-j6', '-l6'], 'cwd': '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agness'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agness'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2795'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agness'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agness'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/agness-VirtualBox-Ubuntu-22:@/tmp/.ICE-unix/1005,unix/agness-VirtualBox-Ubuntu-22:/tmp/.ICE-unix/1005'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d4ee6cb2_7525_4333_83d7_798b1631158f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I0E7F3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.068624] (simple_rviz_clone) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simple_rviz_node\x1b[0m\n'}
+[0.091576] (simple_rviz_clone) StdoutLine: {'line': b'[ 33%] \x1b[32mBuilding CXX object CMakeFiles/simple_rviz_node.dir/src/main.cpp.o\x1b[0m\n'}
+[0.133047] (-) TimerEvent: {}
+[0.237132] (-) TimerEvent: {}
+[0.341068] (-) TimerEvent: {}
+[0.443005] (-) TimerEvent: {}
+[0.544720] (-) TimerEvent: {}
+[0.646996] (-) TimerEvent: {}
+[0.747993] (-) TimerEvent: {}
+[0.854230] (-) TimerEvent: {}
+[0.968046] (-) TimerEvent: {}
+[1.068644] (-) TimerEvent: {}
+[1.171715] (-) TimerEvent: {}
+[1.276204] (-) TimerEvent: {}
+[1.376730] (-) TimerEvent: {}
+[1.480544] (-) TimerEvent: {}
+[1.589148] (-) TimerEvent: {}
+[1.693602] (-) TimerEvent: {}
+[1.806198] (-) TimerEvent: {}
+[1.921330] (-) TimerEvent: {}
+[2.029747] (-) TimerEvent: {}
+[2.131414] (-) TimerEvent: {}
+[2.233185] (-) TimerEvent: {}
+[2.336980] (-) TimerEvent: {}
+[2.439379] (-) TimerEvent: {}
+[2.553787] (-) TimerEvent: {}
+[2.663301] (-) TimerEvent: {}
+[2.770146] (-) TimerEvent: {}
+[2.876329] (-) TimerEvent: {}
+[2.982366] (-) TimerEvent: {}
+[3.091717] (-) TimerEvent: {}
+[3.193947] (-) TimerEvent: {}
+[3.313822] (-) TimerEvent: {}
+[3.415530] (-) TimerEvent: {}
+[3.521344] (-) TimerEvent: {}
+[3.631099] (-) TimerEvent: {}
+[3.732285] (-) TimerEvent: {}
+[3.836775] (-) TimerEvent: {}
+[3.941103] (-) TimerEvent: {}
+[4.050331] (-) TimerEvent: {}
+[4.155429] (-) TimerEvent: {}
+[4.257492] (-) TimerEvent: {}
+[4.363370] (-) TimerEvent: {}
+[4.468240] (-) TimerEvent: {}
+[4.568847] (-) TimerEvent: {}
+[4.671444] (-) TimerEvent: {}
+[4.781476] (-) TimerEvent: {}
+[4.891078] (-) TimerEvent: {}
+[4.999931] (-) TimerEvent: {}
+[5.118874] (-) TimerEvent: {}
+[5.224615] (-) TimerEvent: {}
+[5.354259] (-) TimerEvent: {}
+[5.456240] (-) TimerEvent: {}
+[5.569739] (-) TimerEvent: {}
+[5.679236] (-) TimerEvent: {}
+[5.780162] (-) TimerEvent: {}
+[5.882205] (-) TimerEvent: {}
+[5.991511] (-) TimerEvent: {}
+[6.113514] (-) TimerEvent: {}
+[6.221319] (-) TimerEvent: {}
+[6.322494] (-) TimerEvent: {}
+[6.423030] (-) TimerEvent: {}
+[6.525505] (-) TimerEvent: {}
+[6.626496] (-) TimerEvent: {}
+[6.734288] (-) TimerEvent: {}
+[6.839833] (-) TimerEvent: {}
+[6.953160] (-) TimerEvent: {}
+[7.054581] (-) TimerEvent: {}
+[7.161081] (-) TimerEvent: {}
+[7.271801] (-) TimerEvent: {}
+[7.373073] (-) TimerEvent: {}
+[7.476185] (-) TimerEvent: {}
+[7.581986] (-) TimerEvent: {}
+[7.697006] (-) TimerEvent: {}
+[7.810003] (-) TimerEvent: {}
+[8.171712] (-) TimerEvent: {}
+[8.194566] (simple_rviz_clone) StdoutLine: {'line': b'[ 66%] \x1b[32m\x1b[1mLinking CXX executable simple_rviz_node\x1b[0m\n'}
+[8.271902] (-) TimerEvent: {}
+[8.373261] (-) TimerEvent: {}
+[8.473713] (-) TimerEvent: {}
+[8.575025] (-) TimerEvent: {}
+[8.676063] (-) TimerEvent: {}
+[8.781993] (-) TimerEvent: {}
+[8.884106] (-) TimerEvent: {}
+[9.163760] (-) TimerEvent: {}
+[9.182928] (simple_rviz_clone) StdoutLine: {'line': b'[100%] Built target simple_rviz_node\n'}
+[9.197036] (simple_rviz_clone) CommandEnded: {'returncode': 0}
+[9.197318] (simple_rviz_clone) JobProgress: {'identifier': 'simple_rviz_clone', 'progress': 'install'}
+[9.205512] (simple_rviz_clone) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone'], 'cwd': '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agness'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agness'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '2795'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agness'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agness'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/agness-VirtualBox-Ubuntu-22:@/tmp/.ICE-unix/1005,unix/agness-VirtualBox-Ubuntu-22:/tmp/.ICE-unix/1005'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/d4ee6cb2_7525_4333_83d7_798b1631158f'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.I0E7F3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.109'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[9.214212] (simple_rviz_clone) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[9.214358] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node\n'}
+[9.217557] (simple_rviz_clone) StdoutLine: {'line': b'-- Set runtime path of "/home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node" to ""\n'}
+[9.217651] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include/\n'}
+[9.217695] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone\n'}
+[9.217732] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone/visualizer.hpp\n'}
+[9.217768] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/package_run_dependencies/simple_rviz_clone\n'}
+[9.217802] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/parent_prefix_path/simple_rviz_clone\n'}
+[9.217837] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.sh\n'}
+[9.217871] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.dsv\n'}
+[9.217905] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.sh\n'}
+[9.217939] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.dsv\n'}
+[9.218067] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.bash\n'}
+[9.218120] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.sh\n'}
+[9.218156] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.zsh\n'}
+[9.218191] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.dsv\n'}
+[9.218318] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.dsv\n'}
+[9.218369] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/packages/simple_rviz_clone\n'}
+[9.218404] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig.cmake\n'}
+[9.218438] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig-version.cmake\n'}
+[9.218472] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.xml\n'}
+[9.221704] (simple_rviz_clone) CommandEnded: {'returncode': 0}
+[9.241545] (simple_rviz_clone) JobEnded: {'identifier': 'simple_rviz_clone', 'rc': 0}
+[9.242449] (-) EventReactorShutdown: {}

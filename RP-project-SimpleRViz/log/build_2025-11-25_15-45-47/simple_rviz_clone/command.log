@@ -1,0 +1,4 @@
+Invoking command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone -- -j4 -l4
+Invoked command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone -- -j4 -l4
+Invoking command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone
+Invoked command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone

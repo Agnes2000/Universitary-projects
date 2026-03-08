@@ -1,0 +1,88 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-8f19fe0f8f994bce63d6.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0
+					],
+					"name" : "simple_rviz_clone",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "mouse_test::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-mouse_test-43f64b448d04c4bfa2ea.json",
+					"name" : "mouse_test",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_rviz_clone_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_rviz_clone_uninstall-148e63ff163439e617ed.json",
+					"name" : "simple_rviz_clone_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "simple_rviz_node::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-simple_rviz_node-19eaba8d50a09d6bff39.json",
+					"name" : "simple_rviz_node",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-d192fbf3504a1bc34e19.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone",
+		"source" : "/home/agness/ros2_ws/src/simple_rviz_clone"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,92 @@
+[0.065s] Invoking command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone -- -j4 -l4
+[0.175s] -- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.496s] -- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)
+[0.584s] -- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)
+[0.584s] -- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.609s] -- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)
+[0.629s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.634s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[0.718s] -- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[0.722s] -- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[0.967s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.124s] -- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)
+[1.229s] -- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)
+[1.287s] -- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)
+[1.557s] -- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)
+[1.567s] -- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)
+[1.583s] -- Ensuring Eigen3 include directory is part of orocos-kdl CMake target
+[1.630s] -- Found nav2_msgs: 1.1.19 (/opt/ros/humble/share/nav2_msgs/cmake)
+[1.929s] -- Configuring done
+[1.987s] -- Generating done
+[2.017s] -- Build files have been written to: /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone
+[2.101s] [35m[1mConsolidate compiler generated dependencies of target simple_rviz_node[0m
+[2.150s] [ 20%] [32mBuilding CXX object CMakeFiles/mouse_test.dir/src/mouse_test.cpp.o[0m
+[2.228s] [ 40%] [32mBuilding CXX object CMakeFiles/simple_rviz_node.dir/src/visualizer.cpp.o[0m
+[2.237s] [ 60%] [32mBuilding CXX object CMakeFiles/simple_rviz_node.dir/src/main.cpp.o[0m
+[7.315s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/mouse_test.cpp:[m[K In function ‘[01m[Kvoid mouseCallback(int, int, int, int, void*)[m[K’:
+[7.315s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/mouse_test.cpp:5:49:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kflags[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.316s]     5 | void mouseCallback(int event, int x, int y, [01;35m[Kint flags[m[K, void* userdata) {
+[7.316s]       |                                             [01;35m[K~~~~^~~~~[m[K
+[7.316s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/mouse_test.cpp:5:62:[m[K [01;35m[Kwarning: [m[Kunused parameter ‘[01m[Kuserdata[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter-Wunused-parameter]8;;[m[K]
+[7.316s]     5 | void mouseCallback(int event, int x, int y, int flags, [01;35m[Kvoid* userdata[m[K) {
+[7.316s]       |                                                        [01;35m[K~~~~~~^~~~~~~~[m[K
+[9.444s] [ 80%] [32m[1mLinking CXX executable mouse_test[0m
+[10.920s] [ 80%] Built target mouse_test
+[16.336s] In file included from [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:1[m[K:
+[16.336s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:[m[K In constructor ‘[01m[KVisualizer::Visualizer(int, int, std::shared_ptr<tf2_ros::Buffer>)[m[K’:
+[16.337s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:63:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KVisualizer::particles_received_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.337s]    63 |     bool [01;35m[Kparticles_received_[m[K;
+[16.337s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~~[m[K
+[16.337s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:59:12:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kdouble Visualizer::scale_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.337s]    59 |     double [01;35m[Kscale_[m[K;
+[16.337s]       |            [01;35m[K^~~~~~[m[K
+[16.338s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:13:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.338s]    13 | [01;35m[KVisualizer[m[K::Visualizer(int width, int height, std::shared_ptr<tf2_ros::Buffer> tf_buffer)
+[16.338s]       | [01;35m[K^~~~~~~~~~[m[K
+[16.338s] In file included from [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:1[m[K:
+[16.339s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:87:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KVisualizer::waiting_for_orientation_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.339s]    87 |     bool [01;35m[Kwaiting_for_orientation_[m[K;
+[16.339s]       |          [01;35m[K^~~~~~~~~~~~~~~~~~~~~~~~[m[K
+[16.339s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:73:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool Visualizer::goal_received_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.339s]    73 |     bool [01;35m[Kgoal_received_[m[K;
+[16.339s]       |          [01;35m[K^~~~~~~~~~~~~~[m[K
+[16.340s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:13:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.340s]    13 | [01;35m[KVisualizer[m[K::Visualizer(int width, int height, std::shared_ptr<tf2_ros::Buffer> tf_buffer)
+[16.340s]       | [01;35m[K^~~~~~~~~~[m[K
+[16.340s] In file included from [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:1[m[K:
+[16.340s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:73:10:[m[K [01;35m[Kwarning: [m[K‘[01m[KVisualizer::goal_received_[m[K’ will be initialized after [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.340s]    73 |     bool [01;35m[Kgoal_received_[m[K;
+[16.341s]       |          [01;35m[K^~~~~~~~~~~~~~[m[K
+[16.341s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:48:10:[m[K [01;35m[Kwarning: [m[K  ‘[01m[Kbool Visualizer::path_received_[m[K’ [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.341s]    48 |     bool [01;35m[Kpath_received_[m[K;
+[16.341s]       |          [01;35m[K^~~~~~~~~~~~~~[m[K
+[16.341s] [01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:13:1:[m[K [01;35m[Kwarning: [m[K  when initialized here [[01;35m[K]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder-Wreorder]8;;[m[K]
+[16.342s]    13 | [01;35m[KVisualizer[m[K::Visualizer(int width, int height, std::shared_ptr<tf2_ros::Buffer> tf_buffer)
+[16.342s]       | [01;35m[K^~~~~~~~~~[m[K
+[57.141s] [100%] [32m[1mLinking CXX executable simple_rviz_node[0m
+[61.425s] [100%] Built target simple_rviz_node
+[61.471s] Invoked command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone -- -j4 -l4
+[61.496s] Invoking command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone
+[61.509s] -- Install configuration: ""
+[61.516s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node
+[61.541s] -- Set runtime path of "/home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node" to ""
+[61.543s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include/
+[61.544s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone
+[61.545s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone/visualizer.hpp
+[61.545s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/mouse_test
+[61.545s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/package_run_dependencies/simple_rviz_clone
+[61.545s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/parent_prefix_path/simple_rviz_clone
+[61.545s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.sh
+[61.546s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.dsv
+[61.546s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.sh
+[61.546s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.dsv
+[61.548s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.bash
+[61.549s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.sh
+[61.550s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.zsh
+[61.550s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.dsv
+[61.551s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.dsv
+[61.552s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/packages/simple_rviz_clone
+[61.553s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig.cmake
+[61.555s] -- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig-version.cmake
+[61.555s] -- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.xml
+[61.559s] Invoked command in '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone

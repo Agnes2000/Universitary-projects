@@ -1,0 +1,11 @@
+[01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/main.cpp:43:13:[m[K [01;31m[Kerror: [m[K‘[01m[KTimerHandle[m[K’ in namespace ‘[01m[Krclcpp[m[K’ does not name a type; did you mean ‘[01m[KTimerBase[m[K’?
+   43 |     rclcpp::[01;31m[KTimerHandle[m[K::SharedPtr render_timer_;
+      |             [01;31m[K^~~~~~~~~~~[m[K
+      |             [32m[KTimerBase[m[K
+[01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/main.cpp:[m[K In constructor ‘[01m[KSimpleRVizNode::SimpleRVizNode()[m[K’:
+[01m[K/home/agness/ros2_ws/src/simple_rviz_clone/src/main.cpp:22:9:[m[K [01;31m[Kerror: [m[K‘[01m[Krender_timer_[m[K’ was not declared in this scope
+   22 |         [01;31m[Krender_timer_[m[K = this->create_wall_timer(
+      |         [01;31m[K^~~~~~~~~~~~~[m[K
+gmake[2]: *** [CMakeFiles/simple_rviz_node.dir/build.make:76: CMakeFiles/simple_rviz_node.dir/src/main.cpp.o] Error 1
+gmake[1]: *** [CMakeFiles/Makefile2:137: CMakeFiles/simple_rviz_node.dir/all] Error 2
+gmake: *** [Makefile:146: all] Error 2

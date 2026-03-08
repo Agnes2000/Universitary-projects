@@ -1,0 +1,626 @@
+[0.000000] (-) TimerEvent: {}
+[0.000312] (simple_rviz_clone) JobQueued: {'identifier': 'simple_rviz_clone', 'dependencies': OrderedDict()}
+[0.003394] (simple_rviz_clone) JobStarted: {'identifier': 'simple_rviz_clone'}
+[0.022564] (simple_rviz_clone) JobProgress: {'identifier': 'simple_rviz_clone', 'progress': 'cmake'}
+[0.039642] (simple_rviz_clone) JobProgress: {'identifier': 'simple_rviz_clone', 'progress': 'build'}
+[0.040051] (simple_rviz_clone) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone', '--', '-j4', '-l4'], 'cwd': '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agness'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agness'), ('OLDPWD', '/home/agness/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agness'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agness'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/agness-VirtualBox:@/tmp/.ICE-unix/982,unix/agness-VirtualBox:/tmp/.ICE-unix/982'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/aaf6c83c_81d4_4b79_8e7f_2264953ca2df'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XYGLG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.097620] (-) TimerEvent: {}
+[0.178196] (simple_rviz_clone) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.12 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.200290] (-) TimerEvent: {}
+[0.312451] (-) TimerEvent: {}
+[0.413282] (-) TimerEvent: {}
+[0.499063] (simple_rviz_clone) StdoutLine: {'line': b'-- Found rclcpp: 16.0.15 (/opt/ros/humble/share/rclcpp/cmake)\n'}
+[0.515740] (-) TimerEvent: {}
+[0.586484] (simple_rviz_clone) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.7 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.587233] (simple_rviz_clone) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.7 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.612220] (simple_rviz_clone) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.7 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.632455] (simple_rviz_clone) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.632765] (-) TimerEvent: {}
+[0.637670] (simple_rviz_clone) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.720019] (simple_rviz_clone) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.2 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[0.724886] (simple_rviz_clone) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.9 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[0.742180] (-) TimerEvent: {}
+[0.856524] (-) TimerEvent: {}
+[0.966404] (-) TimerEvent: {}
+[0.970049] (simple_rviz_clone) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.071709] (-) TimerEvent: {}
+[1.126604] (simple_rviz_clone) StdoutLine: {'line': b'-- Found sensor_msgs: 4.9.0 (/opt/ros/humble/share/sensor_msgs/cmake)\n'}
+[1.185245] (-) TimerEvent: {}
+[1.232522] (simple_rviz_clone) StdoutLine: {'line': b'-- Found nav_msgs: 4.9.0 (/opt/ros/humble/share/nav_msgs/cmake)\n'}
+[1.289949] (simple_rviz_clone) StdoutLine: {'line': b'-- Found tf2_ros: 0.25.16 (/opt/ros/humble/share/tf2_ros/cmake)\n'}
+[1.290390] (-) TimerEvent: {}
+[1.540162] (-) TimerEvent: {}
+[1.559827] (simple_rviz_clone) StdoutLine: {'line': b'-- Found tf2_geometry_msgs: 0.25.16 (/opt/ros/humble/share/tf2_geometry_msgs/cmake)\n'}
+[1.570523] (simple_rviz_clone) StdoutLine: {'line': b'-- Found eigen3_cmake_module: 0.1.1 (/opt/ros/humble/share/eigen3_cmake_module/cmake)\n'}
+[1.585029] (simple_rviz_clone) StdoutLine: {'line': b'-- Ensuring Eigen3 include directory is part of orocos-kdl CMake target\n'}
+[1.632980] (simple_rviz_clone) StdoutLine: {'line': b'-- Found nav2_msgs: 1.1.19 (/opt/ros/humble/share/nav2_msgs/cmake)\n'}
+[1.649967] (-) TimerEvent: {}
+[1.754514] (-) TimerEvent: {}
+[1.856136] (-) TimerEvent: {}
+[1.932029] (simple_rviz_clone) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.956333] (-) TimerEvent: {}
+[1.989918] (simple_rviz_clone) StdoutLine: {'line': b'-- Generating done\n'}
+[2.020246] (simple_rviz_clone) StdoutLine: {'line': b'-- Build files have been written to: /home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone\n'}
+[2.058093] (-) TimerEvent: {}
+[2.103549] (simple_rviz_clone) StdoutLine: {'line': b'\x1b[35m\x1b[1mConsolidate compiler generated dependencies of target simple_rviz_node\x1b[0m\n'}
+[2.151788] (simple_rviz_clone) StdoutLine: {'line': b'[ 20%] \x1b[32mBuilding CXX object CMakeFiles/mouse_test.dir/src/mouse_test.cpp.o\x1b[0m\n'}
+[2.158924] (-) TimerEvent: {}
+[2.231489] (simple_rviz_clone) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/simple_rviz_node.dir/src/visualizer.cpp.o\x1b[0m\n'}
+[2.240317] (simple_rviz_clone) StdoutLine: {'line': b'[ 60%] \x1b[32mBuilding CXX object CMakeFiles/simple_rviz_node.dir/src/main.cpp.o\x1b[0m\n'}
+[2.264446] (-) TimerEvent: {}
+[2.374002] (-) TimerEvent: {}
+[2.479263] (-) TimerEvent: {}
+[2.580576] (-) TimerEvent: {}
+[2.682439] (-) TimerEvent: {}
+[2.788180] (-) TimerEvent: {}
+[2.924774] (-) TimerEvent: {}
+[3.033490] (-) TimerEvent: {}
+[3.153563] (-) TimerEvent: {}
+[3.262534] (-) TimerEvent: {}
+[3.399592] (-) TimerEvent: {}
+[3.501469] (-) TimerEvent: {}
+[3.605155] (-) TimerEvent: {}
+[3.712863] (-) TimerEvent: {}
+[3.814045] (-) TimerEvent: {}
+[3.921682] (-) TimerEvent: {}
+[4.035329] (-) TimerEvent: {}
+[4.150422] (-) TimerEvent: {}
+[4.252260] (-) TimerEvent: {}
+[4.379559] (-) TimerEvent: {}
+[4.493200] (-) TimerEvent: {}
+[4.605592] (-) TimerEvent: {}
+[4.718671] (-) TimerEvent: {}
+[4.819731] (-) TimerEvent: {}
+[4.930228] (-) TimerEvent: {}
+[5.077431] (-) TimerEvent: {}
+[5.189168] (-) TimerEvent: {}
+[5.290194] (-) TimerEvent: {}
+[5.402558] (-) TimerEvent: {}
+[5.517711] (-) TimerEvent: {}
+[5.629364] (-) TimerEvent: {}
+[5.735602] (-) TimerEvent: {}
+[5.839298] (-) TimerEvent: {}
+[5.944394] (-) TimerEvent: {}
+[6.052155] (-) TimerEvent: {}
+[6.178202] (-) TimerEvent: {}
+[6.282682] (-) TimerEvent: {}
+[6.386344] (-) TimerEvent: {}
+[6.526641] (-) TimerEvent: {}
+[6.627607] (-) TimerEvent: {}
+[6.740055] (-) TimerEvent: {}
+[6.851062] (-) TimerEvent: {}
+[6.954782] (-) TimerEvent: {}
+[7.067157] (-) TimerEvent: {}
+[7.174273] (-) TimerEvent: {}
+[7.276493] (-) TimerEvent: {}
+[7.317959] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/mouse_test.cpp:\x1b[m\x1b[K In function \xe2\x80\x98\x1b[01m\x1b[Kvoid mouseCallback(int, int, int, int, void*)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[7.318677] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/mouse_test.cpp:5:49:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kflags\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.318939] (simple_rviz_clone) StderrLine: {'line': b'    5 | void mouseCallback(int event, int x, int y, \x1b[01;35m\x1b[Kint flags\x1b[m\x1b[K, void* userdata) {\n'}
+[7.319147] (simple_rviz_clone) StderrLine: {'line': b'      |                                             \x1b[01;35m\x1b[K~~~~^~~~~\x1b[m\x1b[K\n'}
+[7.319347] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/mouse_test.cpp:5:62:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[Kunused parameter \xe2\x80\x98\x1b[01m\x1b[Kuserdata\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wunused-parameter\x07-Wunused-parameter\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[7.319549] (simple_rviz_clone) StderrLine: {'line': b'    5 | void mouseCallback(int event, int x, int y, int flags, \x1b[01;35m\x1b[Kvoid* userdata\x1b[m\x1b[K) {\n'}
+[7.319745] (simple_rviz_clone) StderrLine: {'line': b'      |                                                        \x1b[01;35m\x1b[K~~~~~~^~~~~~~~\x1b[m\x1b[K\n'}
+[7.377243] (-) TimerEvent: {}
+[7.483718] (-) TimerEvent: {}
+[7.585311] (-) TimerEvent: {}
+[7.693982] (-) TimerEvent: {}
+[7.797768] (-) TimerEvent: {}
+[7.907354] (-) TimerEvent: {}
+[8.020545] (-) TimerEvent: {}
+[8.131070] (-) TimerEvent: {}
+[8.236163] (-) TimerEvent: {}
+[8.363519] (-) TimerEvent: {}
+[8.466258] (-) TimerEvent: {}
+[8.570565] (-) TimerEvent: {}
+[8.673006] (-) TimerEvent: {}
+[8.774402] (-) TimerEvent: {}
+[8.883342] (-) TimerEvent: {}
+[9.004831] (-) TimerEvent: {}
+[9.119961] (-) TimerEvent: {}
+[9.227301] (-) TimerEvent: {}
+[9.359938] (-) TimerEvent: {}
+[9.447196] (simple_rviz_clone) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX executable mouse_test\x1b[0m\n'}
+[9.469659] (-) TimerEvent: {}
+[9.574040] (-) TimerEvent: {}
+[9.679916] (-) TimerEvent: {}
+[9.783223] (-) TimerEvent: {}
+[9.900321] (-) TimerEvent: {}
+[10.009268] (-) TimerEvent: {}
+[10.113144] (-) TimerEvent: {}
+[10.251556] (-) TimerEvent: {}
+[10.352638] (-) TimerEvent: {}
+[10.454121] (-) TimerEvent: {}
+[10.556409] (-) TimerEvent: {}
+[10.668041] (-) TimerEvent: {}
+[10.770669] (-) TimerEvent: {}
+[10.875582] (-) TimerEvent: {}
+[10.923257] (simple_rviz_clone) StdoutLine: {'line': b'[ 80%] Built target mouse_test\n'}
+[11.025253] (-) TimerEvent: {}
+[11.129708] (-) TimerEvent: {}
+[11.242228] (-) TimerEvent: {}
+[11.351891] (-) TimerEvent: {}
+[11.460056] (-) TimerEvent: {}
+[11.564139] (-) TimerEvent: {}
+[11.665239] (-) TimerEvent: {}
+[11.774074] (-) TimerEvent: {}
+[11.903732] (-) TimerEvent: {}
+[12.009267] (-) TimerEvent: {}
+[12.118899] (-) TimerEvent: {}
+[12.222369] (-) TimerEvent: {}
+[12.324385] (-) TimerEvent: {}
+[12.431421] (-) TimerEvent: {}
+[12.544005] (-) TimerEvent: {}
+[12.650013] (-) TimerEvent: {}
+[12.757385] (-) TimerEvent: {}
+[12.860439] (-) TimerEvent: {}
+[12.970456] (-) TimerEvent: {}
+[13.074571] (-) TimerEvent: {}
+[13.176781] (-) TimerEvent: {}
+[13.278437] (-) TimerEvent: {}
+[13.380365] (-) TimerEvent: {}
+[13.487490] (-) TimerEvent: {}
+[13.589423] (-) TimerEvent: {}
+[13.692013] (-) TimerEvent: {}
+[13.799617] (-) TimerEvent: {}
+[13.905231] (-) TimerEvent: {}
+[14.012285] (-) TimerEvent: {}
+[14.117383] (-) TimerEvent: {}
+[14.218606] (-) TimerEvent: {}
+[14.326441] (-) TimerEvent: {}
+[14.430068] (-) TimerEvent: {}
+[14.535181] (-) TimerEvent: {}
+[14.638855] (-) TimerEvent: {}
+[14.745600] (-) TimerEvent: {}
+[14.847352] (-) TimerEvent: {}
+[14.951343] (-) TimerEvent: {}
+[15.064229] (-) TimerEvent: {}
+[15.169021] (-) TimerEvent: {}
+[15.274418] (-) TimerEvent: {}
+[15.375574] (-) TimerEvent: {}
+[15.482470] (-) TimerEvent: {}
+[15.583180] (-) TimerEvent: {}
+[15.685459] (-) TimerEvent: {}
+[15.787959] (-) TimerEvent: {}
+[15.895134] (-) TimerEvent: {}
+[16.003212] (-) TimerEvent: {}
+[16.104180] (-) TimerEvent: {}
+[16.217822] (-) TimerEvent: {}
+[16.319770] (-) TimerEvent: {}
+[16.339379] (simple_rviz_clone) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:1\x1b[m\x1b[K:\n'}
+[16.339750] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:\x1b[m\x1b[K In constructor \xe2\x80\x98\x1b[01m\x1b[KVisualizer::Visualizer(int, int, std::shared_ptr<tf2_ros::Buffer>)\x1b[m\x1b[K\xe2\x80\x99:\n'}
+[16.339959] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:63:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVisualizer::particles_received_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.340169] (simple_rviz_clone) StderrLine: {'line': b'   63 |     bool \x1b[01;35m\x1b[Kparticles_received_\x1b[m\x1b[K;\n'}
+[16.340336] (simple_rviz_clone) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.340504] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:59:12:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kdouble Visualizer::scale_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.340675] (simple_rviz_clone) StderrLine: {'line': b'   59 |     double \x1b[01;35m\x1b[Kscale_\x1b[m\x1b[K;\n'}
+[16.340854] (simple_rviz_clone) StderrLine: {'line': b'      |            \x1b[01;35m\x1b[K^~~~~~\x1b[m\x1b[K\n'}
+[16.341055] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:13:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.341298] (simple_rviz_clone) StderrLine: {'line': b'   13 | \x1b[01;35m\x1b[KVisualizer\x1b[m\x1b[K::Visualizer(int width, int height, std::shared_ptr<tf2_ros::Buffer> tf_buffer)\n'}
+[16.341503] (simple_rviz_clone) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.341696] (simple_rviz_clone) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:1\x1b[m\x1b[K:\n'}
+[16.341888] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:87:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVisualizer::waiting_for_orientation_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.342088] (simple_rviz_clone) StderrLine: {'line': b'   87 |     bool \x1b[01;35m\x1b[Kwaiting_for_orientation_\x1b[m\x1b[K;\n'}
+[16.342281] (simple_rviz_clone) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.342452] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:73:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool Visualizer::goal_received_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.342614] (simple_rviz_clone) StderrLine: {'line': b'   73 |     bool \x1b[01;35m\x1b[Kgoal_received_\x1b[m\x1b[K;\n'}
+[16.342768] (simple_rviz_clone) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.342920] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:13:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.343080] (simple_rviz_clone) StderrLine: {'line': b'   13 | \x1b[01;35m\x1b[KVisualizer\x1b[m\x1b[K::Visualizer(int width, int height, std::shared_ptr<tf2_ros::Buffer> tf_buffer)\n'}
+[16.343235] (simple_rviz_clone) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.343397] (simple_rviz_clone) StderrLine: {'line': b'In file included from \x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:1\x1b[m\x1b[K:\n'}
+[16.343561] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:73:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K\xe2\x80\x98\x1b[01m\x1b[KVisualizer::goal_received_\x1b[m\x1b[K\xe2\x80\x99 will be initialized after [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.343782] (simple_rviz_clone) StderrLine: {'line': b'   73 |     bool \x1b[01;35m\x1b[Kgoal_received_\x1b[m\x1b[K;\n'}
+[16.343973] (simple_rviz_clone) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.344166] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/include/simple_rviz_clone/visualizer.hpp:48:10:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  \xe2\x80\x98\x1b[01m\x1b[Kbool Visualizer::path_received_\x1b[m\x1b[K\xe2\x80\x99 [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.344364] (simple_rviz_clone) StderrLine: {'line': b'   48 |     bool \x1b[01;35m\x1b[Kpath_received_\x1b[m\x1b[K;\n'}
+[16.344561] (simple_rviz_clone) StderrLine: {'line': b'      |          \x1b[01;35m\x1b[K^~~~~~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.344770] (simple_rviz_clone) StderrLine: {'line': b'\x1b[01m\x1b[K/home/agness/ros2_ws/src/simple_rviz_clone/src/visualizer.cpp:13:1:\x1b[m\x1b[K \x1b[01;35m\x1b[Kwarning: \x1b[m\x1b[K  when initialized here [\x1b[01;35m\x1b[K\x1b]8;;https://gcc.gnu.org/onlinedocs/gcc/Warning-Options.html#index-Wreorder\x07-Wreorder\x1b]8;;\x07\x1b[m\x1b[K]\n'}
+[16.344964] (simple_rviz_clone) StderrLine: {'line': b'   13 | \x1b[01;35m\x1b[KVisualizer\x1b[m\x1b[K::Visualizer(int width, int height, std::shared_ptr<tf2_ros::Buffer> tf_buffer)\n'}
+[16.345156] (simple_rviz_clone) StderrLine: {'line': b'      | \x1b[01;35m\x1b[K^~~~~~~~~~\x1b[m\x1b[K\n'}
+[16.425315] (-) TimerEvent: {}
+[16.536411] (-) TimerEvent: {}
+[16.639378] (-) TimerEvent: {}
+[16.742597] (-) TimerEvent: {}
+[16.845730] (-) TimerEvent: {}
+[16.949603] (-) TimerEvent: {}
+[17.054649] (-) TimerEvent: {}
+[17.155513] (-) TimerEvent: {}
+[17.267632] (-) TimerEvent: {}
+[17.370575] (-) TimerEvent: {}
+[17.476467] (-) TimerEvent: {}
+[17.577185] (-) TimerEvent: {}
+[17.688119] (-) TimerEvent: {}
+[17.797172] (-) TimerEvent: {}
+[17.898768] (-) TimerEvent: {}
+[18.002406] (-) TimerEvent: {}
+[18.111297] (-) TimerEvent: {}
+[18.212121] (-) TimerEvent: {}
+[18.313143] (-) TimerEvent: {}
+[18.417451] (-) TimerEvent: {}
+[18.521572] (-) TimerEvent: {}
+[18.635300] (-) TimerEvent: {}
+[18.741501] (-) TimerEvent: {}
+[18.843349] (-) TimerEvent: {}
+[18.945597] (-) TimerEvent: {}
+[19.046807] (-) TimerEvent: {}
+[19.154818] (-) TimerEvent: {}
+[19.260018] (-) TimerEvent: {}
+[19.367530] (-) TimerEvent: {}
+[19.471066] (-) TimerEvent: {}
+[19.575421] (-) TimerEvent: {}
+[19.679709] (-) TimerEvent: {}
+[19.785698] (-) TimerEvent: {}
+[19.896696] (-) TimerEvent: {}
+[20.001407] (-) TimerEvent: {}
+[20.105274] (-) TimerEvent: {}
+[20.264735] (-) TimerEvent: {}
+[20.367997] (-) TimerEvent: {}
+[20.480684] (-) TimerEvent: {}
+[20.583226] (-) TimerEvent: {}
+[20.686768] (-) TimerEvent: {}
+[20.788087] (-) TimerEvent: {}
+[20.897508] (-) TimerEvent: {}
+[21.001668] (-) TimerEvent: {}
+[21.103486] (-) TimerEvent: {}
+[21.212462] (-) TimerEvent: {}
+[21.320020] (-) TimerEvent: {}
+[21.421531] (-) TimerEvent: {}
+[21.538412] (-) TimerEvent: {}
+[21.640254] (-) TimerEvent: {}
+[21.743394] (-) TimerEvent: {}
+[21.863197] (-) TimerEvent: {}
+[21.965243] (-) TimerEvent: {}
+[22.075208] (-) TimerEvent: {}
+[22.181736] (-) TimerEvent: {}
+[22.286271] (-) TimerEvent: {}
+[22.393422] (-) TimerEvent: {}
+[22.496179] (-) TimerEvent: {}
+[22.600221] (-) TimerEvent: {}
+[22.704997] (-) TimerEvent: {}
+[22.807427] (-) TimerEvent: {}
+[22.940270] (-) TimerEvent: {}
+[23.041153] (-) TimerEvent: {}
+[23.148002] (-) TimerEvent: {}
+[23.254565] (-) TimerEvent: {}
+[23.366505] (-) TimerEvent: {}
+[23.468361] (-) TimerEvent: {}
+[23.572010] (-) TimerEvent: {}
+[23.681046] (-) TimerEvent: {}
+[23.791130] (-) TimerEvent: {}
+[23.896449] (-) TimerEvent: {}
+[24.016752] (-) TimerEvent: {}
+[24.118392] (-) TimerEvent: {}
+[24.221174] (-) TimerEvent: {}
+[24.325180] (-) TimerEvent: {}
+[24.429028] (-) TimerEvent: {}
+[24.530171] (-) TimerEvent: {}
+[24.630990] (-) TimerEvent: {}
+[24.737367] (-) TimerEvent: {}
+[24.850140] (-) TimerEvent: {}
+[24.961243] (-) TimerEvent: {}
+[25.063665] (-) TimerEvent: {}
+[25.165048] (-) TimerEvent: {}
+[25.267037] (-) TimerEvent: {}
+[25.371030] (-) TimerEvent: {}
+[25.478051] (-) TimerEvent: {}
+[25.580177] (-) TimerEvent: {}
+[25.682187] (-) TimerEvent: {}
+[25.785822] (-) TimerEvent: {}
+[25.889502] (-) TimerEvent: {}
+[25.990534] (-) TimerEvent: {}
+[26.093393] (-) TimerEvent: {}
+[26.230381] (-) TimerEvent: {}
+[26.335339] (-) TimerEvent: {}
+[26.436661] (-) TimerEvent: {}
+[26.538230] (-) TimerEvent: {}
+[26.640112] (-) TimerEvent: {}
+[26.745665] (-) TimerEvent: {}
+[26.853043] (-) TimerEvent: {}
+[26.967165] (-) TimerEvent: {}
+[27.069927] (-) TimerEvent: {}
+[27.177085] (-) TimerEvent: {}
+[27.277792] (-) TimerEvent: {}
+[27.383466] (-) TimerEvent: {}
+[27.486205] (-) TimerEvent: {}
+[27.595859] (-) TimerEvent: {}
+[27.701138] (-) TimerEvent: {}
+[27.805480] (-) TimerEvent: {}
+[27.907046] (-) TimerEvent: {}
+[28.008624] (-) TimerEvent: {}
+[28.109512] (-) TimerEvent: {}
+[28.211610] (-) TimerEvent: {}
+[28.312260] (-) TimerEvent: {}
+[28.428294] (-) TimerEvent: {}
+[28.530734] (-) TimerEvent: {}
+[28.637046] (-) TimerEvent: {}
+[28.758453] (-) TimerEvent: {}
+[28.880857] (-) TimerEvent: {}
+[28.981752] (-) TimerEvent: {}
+[29.083345] (-) TimerEvent: {}
+[29.184945] (-) TimerEvent: {}
+[29.300869] (-) TimerEvent: {}
+[29.412184] (-) TimerEvent: {}
+[29.517295] (-) TimerEvent: {}
+[29.656677] (-) TimerEvent: {}
+[29.768859] (-) TimerEvent: {}
+[29.872591] (-) TimerEvent: {}
+[29.977996] (-) TimerEvent: {}
+[30.079276] (-) TimerEvent: {}
+[30.201168] (-) TimerEvent: {}
+[30.312185] (-) TimerEvent: {}
+[30.421212] (-) TimerEvent: {}
+[30.526511] (-) TimerEvent: {}
+[30.635194] (-) TimerEvent: {}
+[30.738990] (-) TimerEvent: {}
+[30.863421] (-) TimerEvent: {}
+[30.963976] (-) TimerEvent: {}
+[31.064790] (-) TimerEvent: {}
+[31.180082] (-) TimerEvent: {}
+[31.282066] (-) TimerEvent: {}
+[31.391994] (-) TimerEvent: {}
+[31.493549] (-) TimerEvent: {}
+[31.596723] (-) TimerEvent: {}
+[31.700734] (-) TimerEvent: {}
+[31.804144] (-) TimerEvent: {}
+[31.911072] (-) TimerEvent: {}
+[32.015213] (-) TimerEvent: {}
+[32.123707] (-) TimerEvent: {}
+[32.230496] (-) TimerEvent: {}
+[32.332991] (-) TimerEvent: {}
+[32.459018] (-) TimerEvent: {}
+[32.560124] (-) TimerEvent: {}
+[32.665810] (-) TimerEvent: {}
+[32.771189] (-) TimerEvent: {}
+[32.873562] (-) TimerEvent: {}
+[32.976091] (-) TimerEvent: {}
+[33.085446] (-) TimerEvent: {}
+[33.188564] (-) TimerEvent: {}
+[33.297860] (-) TimerEvent: {}
+[33.398730] (-) TimerEvent: {}
+[33.502135] (-) TimerEvent: {}
+[33.634066] (-) TimerEvent: {}
+[33.738745] (-) TimerEvent: {}
+[33.840109] (-) TimerEvent: {}
+[33.942064] (-) TimerEvent: {}
+[34.044521] (-) TimerEvent: {}
+[34.148440] (-) TimerEvent: {}
+[34.289171] (-) TimerEvent: {}
+[34.391155] (-) TimerEvent: {}
+[34.535307] (-) TimerEvent: {}
+[34.641867] (-) TimerEvent: {}
+[34.746321] (-) TimerEvent: {}
+[34.888138] (-) TimerEvent: {}
+[35.090868] (-) TimerEvent: {}
+[35.208321] (-) TimerEvent: {}
+[35.336196] (-) TimerEvent: {}
+[35.462103] (-) TimerEvent: {}
+[35.568446] (-) TimerEvent: {}
+[35.834426] (-) TimerEvent: {}
+[35.935866] (-) TimerEvent: {}
+[36.058413] (-) TimerEvent: {}
+[36.169095] (-) TimerEvent: {}
+[36.276242] (-) TimerEvent: {}
+[36.397533] (-) TimerEvent: {}
+[36.531633] (-) TimerEvent: {}
+[36.685750] (-) TimerEvent: {}
+[36.790030] (-) TimerEvent: {}
+[36.999096] (-) TimerEvent: {}
+[37.134682] (-) TimerEvent: {}
+[37.276335] (-) TimerEvent: {}
+[37.427085] (-) TimerEvent: {}
+[37.603574] (-) TimerEvent: {}
+[37.747134] (-) TimerEvent: {}
+[37.874736] (-) TimerEvent: {}
+[37.980264] (-) TimerEvent: {}
+[38.093249] (-) TimerEvent: {}
+[38.199261] (-) TimerEvent: {}
+[38.327185] (-) TimerEvent: {}
+[38.525507] (-) TimerEvent: {}
+[38.645440] (-) TimerEvent: {}
+[38.752974] (-) TimerEvent: {}
+[39.105929] (-) TimerEvent: {}
+[39.302271] (-) TimerEvent: {}
+[39.460597] (-) TimerEvent: {}
+[39.570263] (-) TimerEvent: {}
+[39.700203] (-) TimerEvent: {}
+[39.809626] (-) TimerEvent: {}
+[39.939362] (-) TimerEvent: {}
+[40.060007] (-) TimerEvent: {}
+[40.163922] (-) TimerEvent: {}
+[40.356973] (-) TimerEvent: {}
+[40.497593] (-) TimerEvent: {}
+[40.608926] (-) TimerEvent: {}
+[40.709730] (-) TimerEvent: {}
+[40.812131] (-) TimerEvent: {}
+[40.944108] (-) TimerEvent: {}
+[41.054313] (-) TimerEvent: {}
+[41.157718] (-) TimerEvent: {}
+[41.262296] (-) TimerEvent: {}
+[41.378313] (-) TimerEvent: {}
+[41.482264] (-) TimerEvent: {}
+[41.586508] (-) TimerEvent: {}
+[41.709355] (-) TimerEvent: {}
+[41.872318] (-) TimerEvent: {}
+[41.975202] (-) TimerEvent: {}
+[42.080981] (-) TimerEvent: {}
+[42.186268] (-) TimerEvent: {}
+[42.306396] (-) TimerEvent: {}
+[42.486654] (-) TimerEvent: {}
+[42.600126] (-) TimerEvent: {}
+[42.705316] (-) TimerEvent: {}
+[42.807709] (-) TimerEvent: {}
+[42.918272] (-) TimerEvent: {}
+[43.056067] (-) TimerEvent: {}
+[43.207018] (-) TimerEvent: {}
+[43.319681] (-) TimerEvent: {}
+[43.493750] (-) TimerEvent: {}
+[43.625430] (-) TimerEvent: {}
+[43.732575] (-) TimerEvent: {}
+[43.963331] (-) TimerEvent: {}
+[44.075764] (-) TimerEvent: {}
+[44.221809] (-) TimerEvent: {}
+[44.348824] (-) TimerEvent: {}
+[44.512624] (-) TimerEvent: {}
+[44.698232] (-) TimerEvent: {}
+[44.801564] (-) TimerEvent: {}
+[44.907146] (-) TimerEvent: {}
+[45.113219] (-) TimerEvent: {}
+[45.226536] (-) TimerEvent: {}
+[45.338716] (-) TimerEvent: {}
+[45.552875] (-) TimerEvent: {}
+[45.658300] (-) TimerEvent: {}
+[45.804255] (-) TimerEvent: {}
+[45.945392] (-) TimerEvent: {}
+[46.053152] (-) TimerEvent: {}
+[46.166233] (-) TimerEvent: {}
+[46.325363] (-) TimerEvent: {}
+[46.445749] (-) TimerEvent: {}
+[46.575310] (-) TimerEvent: {}
+[46.736185] (-) TimerEvent: {}
+[46.840429] (-) TimerEvent: {}
+[46.947542] (-) TimerEvent: {}
+[47.062571] (-) TimerEvent: {}
+[47.226474] (-) TimerEvent: {}
+[47.377566] (-) TimerEvent: {}
+[47.691881] (-) TimerEvent: {}
+[47.800616] (-) TimerEvent: {}
+[47.914266] (-) TimerEvent: {}
+[48.019269] (-) TimerEvent: {}
+[48.121333] (-) TimerEvent: {}
+[48.222572] (-) TimerEvent: {}
+[48.325531] (-) TimerEvent: {}
+[48.436021] (-) TimerEvent: {}
+[48.546829] (-) TimerEvent: {}
+[48.647677] (-) TimerEvent: {}
+[48.762557] (-) TimerEvent: {}
+[48.871588] (-) TimerEvent: {}
+[49.020710] (-) TimerEvent: {}
+[49.122743] (-) TimerEvent: {}
+[49.316435] (-) TimerEvent: {}
+[49.421952] (-) TimerEvent: {}
+[49.574564] (-) TimerEvent: {}
+[49.702160] (-) TimerEvent: {}
+[49.824680] (-) TimerEvent: {}
+[50.075792] (-) TimerEvent: {}
+[50.185131] (-) TimerEvent: {}
+[50.293557] (-) TimerEvent: {}
+[50.409511] (-) TimerEvent: {}
+[50.562603] (-) TimerEvent: {}
+[50.665301] (-) TimerEvent: {}
+[50.805984] (-) TimerEvent: {}
+[50.918276] (-) TimerEvent: {}
+[51.035290] (-) TimerEvent: {}
+[51.139518] (-) TimerEvent: {}
+[51.295249] (-) TimerEvent: {}
+[51.398367] (-) TimerEvent: {}
+[51.661705] (-) TimerEvent: {}
+[51.774210] (-) TimerEvent: {}
+[51.884367] (-) TimerEvent: {}
+[52.099496] (-) TimerEvent: {}
+[52.215301] (-) TimerEvent: {}
+[52.325323] (-) TimerEvent: {}
+[52.433438] (-) TimerEvent: {}
+[52.534648] (-) TimerEvent: {}
+[52.648517] (-) TimerEvent: {}
+[52.751357] (-) TimerEvent: {}
+[52.853583] (-) TimerEvent: {}
+[52.995879] (-) TimerEvent: {}
+[53.108177] (-) TimerEvent: {}
+[53.252119] (-) TimerEvent: {}
+[53.352599] (-) TimerEvent: {}
+[53.459160] (-) TimerEvent: {}
+[53.583203] (-) TimerEvent: {}
+[53.686305] (-) TimerEvent: {}
+[53.823384] (-) TimerEvent: {}
+[53.926327] (-) TimerEvent: {}
+[54.073970] (-) TimerEvent: {}
+[54.195738] (-) TimerEvent: {}
+[54.300439] (-) TimerEvent: {}
+[54.403579] (-) TimerEvent: {}
+[54.515109] (-) TimerEvent: {}
+[54.619570] (-) TimerEvent: {}
+[54.729956] (-) TimerEvent: {}
+[54.856564] (-) TimerEvent: {}
+[55.063409] (-) TimerEvent: {}
+[55.174631] (-) TimerEvent: {}
+[55.283536] (-) TimerEvent: {}
+[55.384432] (-) TimerEvent: {}
+[55.560670] (-) TimerEvent: {}
+[55.708489] (-) TimerEvent: {}
+[55.813332] (-) TimerEvent: {}
+[55.921542] (-) TimerEvent: {}
+[56.058330] (-) TimerEvent: {}
+[56.172025] (-) TimerEvent: {}
+[56.298938] (-) TimerEvent: {}
+[56.419498] (-) TimerEvent: {}
+[56.656336] (-) TimerEvent: {}
+[56.761166] (-) TimerEvent: {}
+[56.867178] (-) TimerEvent: {}
+[56.975489] (-) TimerEvent: {}
+[57.077004] (-) TimerEvent: {}
+[57.144037] (simple_rviz_clone) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking CXX executable simple_rviz_node\x1b[0m\n'}
+[57.177400] (-) TimerEvent: {}
+[57.287496] (-) TimerEvent: {}
+[57.410324] (-) TimerEvent: {}
+[57.512505] (-) TimerEvent: {}
+[57.619067] (-) TimerEvent: {}
+[57.733577] (-) TimerEvent: {}
+[57.938198] (-) TimerEvent: {}
+[58.041241] (-) TimerEvent: {}
+[58.147228] (-) TimerEvent: {}
+[58.296444] (-) TimerEvent: {}
+[58.404391] (-) TimerEvent: {}
+[58.507962] (-) TimerEvent: {}
+[58.613274] (-) TimerEvent: {}
+[58.714555] (-) TimerEvent: {}
+[58.830173] (-) TimerEvent: {}
+[58.945361] (-) TimerEvent: {}
+[59.052776] (-) TimerEvent: {}
+[59.241560] (-) TimerEvent: {}
+[59.417342] (-) TimerEvent: {}
+[59.519926] (-) TimerEvent: {}
+[59.786018] (-) TimerEvent: {}
+[59.887625] (-) TimerEvent: {}
+[59.989394] (-) TimerEvent: {}
+[60.136529] (-) TimerEvent: {}
+[60.239170] (-) TimerEvent: {}
+[60.354385] (-) TimerEvent: {}
+[60.491318] (-) TimerEvent: {}
+[60.626488] (-) TimerEvent: {}
+[60.729520] (-) TimerEvent: {}
+[60.926393] (-) TimerEvent: {}
+[61.033689] (-) TimerEvent: {}
+[61.141171] (-) TimerEvent: {}
+[61.273606] (-) TimerEvent: {}
+[61.374450] (-) TimerEvent: {}
+[61.428155] (simple_rviz_clone) StdoutLine: {'line': b'[100%] Built target simple_rviz_node\n'}
+[61.474344] (simple_rviz_clone) CommandEnded: {'returncode': 0}
+[61.475651] (-) TimerEvent: {}
+[61.476126] (simple_rviz_clone) JobProgress: {'identifier': 'simple_rviz_clone', 'progress': 'install'}
+[61.498754] (simple_rviz_clone) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone'], 'cwd': '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'agness'), ('XDG_SESSION_TYPE', 'wayland'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/agness'), ('OLDPWD', '/home/agness/ros2_ws/src'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('SYSTEMD_EXEC_PID', '3179'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus'), ('COLORTERM', 'truecolor'), ('IM_CONFIG_PHASE', '1'), ('WAYLAND_DISPLAY', 'wayland-0'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'agness'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('USERNAME', 'agness'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/agness-VirtualBox:@/tmp/.ICE-unix/982,unix/agness-VirtualBox:/tmp/.ICE-unix/982'), ('XDG_MENU_PREFIX', 'gnome-'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/aaf6c83c_81d4_4b79_8e7f_2264953ca2df'), ('GNOME_SETUP_DISPLAY', ':1'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':0'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/.mutter-Xwaylandauth.XYGLG3'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.112'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone'), ('TURTLEBOT3_MODEL', 'waffle'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[61.511429] (simple_rviz_clone) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[61.519369] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node\n'}
+[61.543877] (simple_rviz_clone) StdoutLine: {'line': b'-- Set runtime path of "/home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node" to ""\n'}
+[61.544798] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include/\n'}
+[61.546257] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone\n'}
+[61.547771] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone/visualizer.hpp\n'}
+[61.548190] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/mouse_test\n'}
+[61.548401] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/package_run_dependencies/simple_rviz_clone\n'}
+[61.548582] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/parent_prefix_path/simple_rviz_clone\n'}
+[61.548775] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.sh\n'}
+[61.548939] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.dsv\n'}
+[61.549102] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.sh\n'}
+[61.549275] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.dsv\n'}
+[61.550041] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.bash\n'}
+[61.551288] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.sh\n'}
+[61.553046] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.zsh\n'}
+[61.553666] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.dsv\n'}
+[61.554116] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.dsv\n'}
+[61.554590] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/packages/simple_rviz_clone\n'}
+[61.556021] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig.cmake\n'}
+[61.556825] (simple_rviz_clone) StdoutLine: {'line': b'-- Up-to-date: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig-version.cmake\n'}
+[61.558325] (simple_rviz_clone) StdoutLine: {'line': b'-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.xml\n'}
+[61.561980] (simple_rviz_clone) CommandEnded: {'returncode': 0}
+[61.584066] (-) TimerEvent: {}
+[61.610482] (simple_rviz_clone) JobEnded: {'identifier': 'simple_rviz_clone', 'rc': 0}
+[61.616981] (-) EventReactorShutdown: {}

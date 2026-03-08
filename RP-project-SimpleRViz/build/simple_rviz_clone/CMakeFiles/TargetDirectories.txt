@@ -1,0 +1,11 @@
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/uninstall.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/simple_rviz_clone_uninstall.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/simple_rviz_node.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/mouse_test.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/test.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/edit_cache.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/rebuild_cache.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/list_install_components.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/install.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/install/local.dir
+/home/agness/ros2_ws/src/simple_rviz_clone/build/simple_rviz_clone/CMakeFiles/install/strip.dir

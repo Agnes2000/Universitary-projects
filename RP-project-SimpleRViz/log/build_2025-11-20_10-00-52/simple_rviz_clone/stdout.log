@@ -1,0 +1,25 @@
+[35m[1mConsolidate compiler generated dependencies of target simple_rviz_node[0m
+[ 33%] [32mBuilding CXX object CMakeFiles/simple_rviz_node.dir/src/main.cpp.o[0m
+[ 66%] [32m[1mLinking CXX executable simple_rviz_node[0m
+[100%] Built target simple_rviz_node
+-- Install configuration: ""
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node
+-- Set runtime path of "/home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/lib/simple_rviz_clone/simple_rviz_node" to ""
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include/
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/include//simple_rviz_clone/visualizer.hpp
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/package_run_dependencies/simple_rviz_clone
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/parent_prefix_path/simple_rviz_clone
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.sh
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/ament_prefix_path.dsv
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.sh
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/environment/path.dsv
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.bash
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.sh
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.zsh
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/local_setup.dsv
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.dsv
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/ament_index/resource_index/packages/simple_rviz_clone
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig.cmake
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/cmake/simple_rviz_cloneConfig-version.cmake
+-- Installing: /home/agness/ros2_ws/src/simple_rviz_clone/install/simple_rviz_clone/share/simple_rviz_clone/package.xml
