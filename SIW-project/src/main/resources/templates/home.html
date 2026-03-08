@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{home.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+        <main class="container-fluid px-lg-5 bg-light">
+            <section class="container px-lg-5 mt-2">
+                <div th:each="film : ${films}" class="d-flex align-items-center bg-white p-3 shadow-sm border my-2">
+                    <img class="img-icon" th:src="${film.urlImg == null} ? @{/img/placeholder.jpg} : @{${film.photosImagePath}}" th:alt="${film.nome}">
+                    <div class="ms-3">
+                        <h4 class="mb-3" th:text="${film.nome}"></h4>
+                        <div>
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span th:text="${film.anno}"></span>
+                        </div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-clapperboard"></i>
+                            <span th:text="${film.regista.nome + ' ' + film.regista.cognome}"></span>
+                        </div>
+                    </div>
+                    <div class="ms-auto">
+                        <a class="btn btn-dark" th:href="@{'/films/' + ${film.id}}">
+                            <i class="fa-solid fa-film"></i>
+                            <span th:text="#{home.visualizzaFilm}"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+</html>

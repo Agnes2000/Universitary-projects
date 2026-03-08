@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{index.titolo})"></head>
+
+	<body th:replace="fragments/base :: body(~{::main})">
+
+		<main class="container-fluid px-lg-5 py-3 bg-light">
+
+			<!--Vetrina Films-->
+			<section class="container px-lg-5">
+				<h2 class="display-4 text-center" th:text="#{index.titolo}"></h2>
+				<div class="container-fluid d-flex flex-wrap my-2 justify-content-center">
+					<div class="card m-1" th:each="film : ${films}">
+						<div class="card-body text-center m-0">
+							<h3 class="card-title" th:text="${film.nome}"></h3>
+							<p class="card-text">
+								<span th:text="#{index.filmCard.anno}"></span>
+								<span th:text="${film.anno}"></span>
+								<br>
+								<span th:text="#{index.filmCard.regista}"></span>
+								<span th:text="${film.regista.nome}"></span>
+                                <span th:text="${film.regista.cognome}"></span>
+							</p>
+							<a class="btn btn-dark" th:href="@{'/films/' + ${film.id}}" th:text="#{index.filmCard.recensisciBtn}"></a>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- Introduzione al Sito -->
+			<section class="container px-lg-5">
+				<h2 class="text-center" th:text="#{index.titoloPresentazione}"></h2>
+				<p class="text-center text-wrap" th:text="#{index.presentazione}"></p>
+			</section>
+		</main>
+
+	</body>
+
+</html>

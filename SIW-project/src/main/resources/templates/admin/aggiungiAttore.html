@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{admin.aggiungiAttore.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+        <main class="container-fluid px-lg-5 py-3 bg-light">
+            <section class="container px-lg-5">
+                <div class="d-flex mb-2">
+                    <h2 th:text="#{admin.aggiungiAttore.testata}"></h2>
+                </div>
+
+                <table class="table table-striped table-sm text-center">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col" th:text="#{admin.aggiungiAttore.tabella.nome}"></th>
+							<th scope="col" th:text="#{admin.aggiungiAttore.tabella.cognome}"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="attore : ${attori}" class="align-middle">
+                            <td th:text="${attore.nome}"></td>
+                            <td th:text="${attore.cognome}"></td>
+                            <td>
+                                <a th:href="@{'/admin/films/' + ${film.id} + '/aggiungiAttore/' + ${attore.id}}" class="btn btn-dark">
+                                    <i class="fa-solid fa-user-plus"></i>
+                                    <span th:text="#{admin.aggiungiAttore}"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+	</body>
+
+</html>

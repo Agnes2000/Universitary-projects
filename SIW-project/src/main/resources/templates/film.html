@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(${film.nome})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+		<main class="container-fluid px-lg-5 py-3 bg-light">
+            <section class="container px-lg-5">
+                <div class="d-flex flex-wrap align-items-center bg-white p-3 shadow-sm border">
+                    <img class="img-icon" th:src="${film.urlImg == null} ? @{/img/placeholder.jpg} : @{${film.photosImagePath}}" th:alt="${film.nome}">
+                    <div class="ms-3">
+                        <h4 class="mb-3" th:text="${film.nome}"></h4>
+                        <div>
+                            <i class="fa-regular fa-calendar-days"></i>
+                            <span th:text="${film.anno}"></span>
+                        </div>
+                        <div>
+                            <i class="fa-sharp fa-solid fa-clapperboard"></i>
+                            <span th:text="${film.regista.nome + ' ' + film.regista.cognome}"></span>
+                        </div>
+                    </div>
+                    <!-- Operazioni da Admin -->
+                    <div class="ms-md-auto mt-2 mt-md-0" sec:authorize="hasAuthority('ADMIN')">
+                        <div class="dropdown">
+                            <button class="btn btn-dark dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="fa-solid fa-screwdriver-wrench"></i>
+                                <span th:text="#{admin.film.operazioni}"></span>
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li>
+                                    <a th:href="@{'/admin/films/' + ${film.id} + '/update'}" class="dropdown-item">
+                                        <i class="fa-solid fa-wrench"></i>
+                                        <span th:text="#{admin.film.modifica}"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a th:href="@{'/admin/films/' + ${film.id} + '/delete'}"
+                                        class="dropdown-item text-danger">
+                                        <i class="fa-solid fa-trash-can"></i>
+                                        <span th:text="#{admin.film.cancella}"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Informazioni multiple film -->
+            <section class="d-flex px-lg-5">
+
+                <!-- Elenco Attori del Film -->
+                <section class="container">
+                    <div class="d-flex px-2 my-2">
+                        <h2 th:text="#{film.elencoAttori.titolo}"></h2>
+                        <div class="ms-auto" sec:authorize="hasAuthority('ADMIN')">
+                            <a class="btn btn-dark" th:href="@{'/admin/films/' + ${film.id} + '/attori'}">
+                                <i class="fa-solid fa-plus"></i>
+                                <span th:text="#{admin.film.attore.aggiungi}"></span>
+                            </a>
+                        </div>
+                    </div>
+                        
+                    <div class="d-flex flex-wrap align-items-center bg-white p-3 shadow-sm border" th:each="attore : ${film.attori}">
+                        <img class="img-icon" th:src="${attore.urlImg == null} ? @{/img/placeholder.jpg} : @{${attore.photosImagePath}}" th:alt="${attore.nome + ' ' + attore.cognome}">
+                        <div class="ms-3">
+                            <h4 class="mb-3" th:text="${attore.nome + ' ' + attore.cognome}"></h4>
+                            <div>
+                                <i class="fa-solid fa-cake-candles"></i>
+                                <span th:text="${#temporals.format(attore.dataDiNascita, 'dd/MM/yyyy')}"></span>
+                            </div>
+                            <div>
+                                <i class="fa-solid fa-skull"></i>
+                                <span th:text="${attore.dataDiMorte == null} ? '-' : ${attore.dataDiMorte}"></span>
+                            </div>
+                        </div>
+                        <div sec:authorize="hasAuthority('ADMIN')" class="ms-auto">
+                            <a th:href="@{'/admin/films/' + ${film.id} + '/attori/' + ${attore.id} + '/remove'}" class="btn btn-danger">
+                                <i class="fa-solid fa-trash-can"></i>
+                                <span th:text="#{admin.film.rimuoviAttore}"></span>
+                            </a>
+                        </div>
+                    </div>
+                        
+                </section>
+
+                <!-- Elenco Recensioni del Film -->
+                <section class="container">
+                    <div class="d-flex px-2 my-2">
+                        <h2 th:text="#{film.elencoRecensioni}"></h2>
+                        <div class="ms-auto" sec:authorize="hasAuthority('UTENTE')" th:unless="${esisteRecensione}">
+                            <a class="btn btn-dark" th:href="@{'/recensioni/film/' + ${film.id}}">
+                                <i class="fa-solid fa-plus"></i>
+                                <span th:text="#{film.recensisciFilm}"></span>
+                            </a>
+                        </div>
+                    </div>
+                        
+                    <div class="bg-white p-3 shadow-sm border" th:each="recensione : ${film.recensioni}">
+                        <div class="d-flex align-items-center">
+                            <div class="h4 ms-3" th:text="${recensione.titolo}"></div>
+                            <div class="h5 ms-auto" th:text="#{film.recensione.val} + ' ' + ${recensione.valutazione}"></div>
+                        </div>
+                        <div class="d-flex align-items-center">
+                            <p th:text="${recensione.testo}" class="me-5"></p>
+                            <div sec:authorize="hasAuthority('ADMIN')" class="ms-5">
+                                <a th:href="@{'/admin/recensioni/' + ${recensione.id} + '/delete'}" class="btn btn-danger">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    <span th:text="#{admin.film.cancellaRecensione}"></span>
+                                </a>
+                            </div>
+                        </div>
+                    </div>   
+                </section>
+            </section>
+        </main>
+
+	</body>
+
+</html>

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{admin.filmForm.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+        <main class="container-fluid px-lg-5 py-3 bg-light">
+            <!-- Form Film -->
+            <section class="container px-lg-5">
+                <h1 class="text-center mb-2" th:text="#{admin.filmForm.testata}"></h1>
+                <form th:action="@{/admin/films/create}" method="post" th:object="${film}" enctype="multipart/form-data">
+                    <!-- Errori Globali -->
+                    <div class="container col-12 col-md-6" th:if="${#fields.hasGlobalErrors()}">
+                        <div class="alert alert-danger" role="alert">
+                            <div th:each="err : ${#fields.globalErrors()}" th:text="${err}"></div>
+                        </div>
+                    </div>
+                    <!-- Id nascosto per la modifica -->
+                    <div><input type="hidden" th:field="*{id}"/></div>
+                    <!-- Prima riga della Form -->
+                    <div class="row mb-2">
+                        <!-- Form Titolo Film -->
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <div class="form-floating">
+                                <input id="nome" type="text" class="form-control" placeholder=" " th:field="*{nome}">
+                                <label for="nome" th:text="#{admin.filmForm.label.nome}"></label>
+                            </div>
+                            <div class="mt-2" th:if="${#fields.hasErrors('nome')}">
+                                <div class="alert alert-danger" role="alert" th:errors="*{nome}"></div>
+                            </div>
+                        </div>
+                        <!-- Form Anno di produzione -->
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating">
+                                <input id="anno" type="number" step="1" class="form-control" placeholder=" " th:field="*{anno}">
+                                <label for="anno" th:text="#{admin.filmForm.label.anno}"></label>
+                            </div>
+                            <div class="mt-2" th:if="${#fields.hasErrors('anno')}">
+                                <div class="alert alert-danger" role="alert" th:errors="*{anno}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Seconda Riga della Form -->
+                    <div class="row mb-2">
+                        <!-- Select Regista -->
+                        <div class="col-12 col-md-6 mb-2 mb-md-0">
+                            <div class="form-floating">
+                                <select id="regista" class="form-select" th:field="*{regista}">
+                                    <option th:each="regista : ${registi}" th:text="${regista.nome + ' ' + regista.cognome}" th:value="${regista.id}"></option>
+                                </select>
+                                <label for="regista" th:text="#{admin.filmForm.label.regista}"></label>
+                            </div>
+                        </div>
+                        <!-- Form Immagine Film -->
+                        <div class="col-12 col-md-6">
+                            <div class="form-floating">
+                                <input id="img" type="file" name="image" class="form-control" placeholder=" " accept="image/png, image/jpeg">
+                                <label for="img" th:text="#{admin.filmForm.label.urlImmagine}"></label>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conferma -->
+                    <div class="container col-12 col-md-5 d-grid">
+                        <button class="btn btn-dark" type="submit">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            <span th:text="#{admin.filmForm.salvaFilm}"></span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+        
+	</body>
+
+</html>

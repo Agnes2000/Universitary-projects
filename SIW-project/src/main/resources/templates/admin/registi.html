@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{admin.registi.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+		<main class="container-fluid px-lg-5 py-3 bg-light">
+            <!-- Tabella Registi -->
+            <section class="container px-lg-5">
+                <!-- Testata Tabella -->
+                <div class="d-flex mb-2">
+                    <h2 th:text="#{admin.registi.titolo}"></h2>
+                    <div class="ms-auto">
+                        <a class="btn btn-dark" th:href="@{/admin/registi/create}">
+                            <i class="fa-solid fa-plus"></i>
+                            <span th:text="#{admin.registi.aggiungiRegista}"></span>
+                        </a>
+                    </div>
+                </div>
+                <table class="table table-striped table-sm text-center">
+                    <!-- Testa della tabella -->
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col"></th>
+                            <th scope="col" th:text="#{admin.registi.tabella.nome}"></th>
+                            <th scope="col" th:text="#{admin.registi.tabella.cognome}"></th>
+                            <th scope="col" th:text="#{admin.registi.tabella.dataDiNascita}"></th>
+                            <th scope="col" th:text="#{admin.registi.tabella.dataDiMorte}"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <!-- Corpo Tabella -->
+                    <tbody>
+                        <tr th:each="regista : ${registi}" class="align-middle">
+                            <td><img class="img-person" th:src="${regista.urlImg == null} ? @{/img/placeholder.jpg} : @{${regista.photosImagePath}}" th:alt="${regista.nome + ' ' + regista.cognome}"></td>
+                            <td th:text="${regista.nome}"></td>
+                            <td th:text="${regista.cognome}"></td>
+                            <td th:text="${#temporals.format(regista.dataDiNascita, 'dd/MM/yyyy')}"></td>
+                            <td th:text="${regista.dataDiMorte == null} ? '-' : ${#temporals.format(regista.dataDiMorte, 'dd/MM/yyyy')}"></td>
+                            <td>
+                                <a th:href="@{'/admin/registi/' + ${regista.id} + '/delete'}" class="btn btn-danger">
+                                    <i class="fa-solid fa-trash-can"></i>
+                                    <span th:text="#{admin.registi.cancella}"></span>
+                                </a>
+                                <a class="btn btn-warning" th:href="@{'/admin/registi/' + ${regista.id} + '/update'}">
+                                    <i class="fa-solid fa-wrench"></i>
+                                    <span th:text="#{admin.registi.modifica}"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+	</body>
+
+</html>

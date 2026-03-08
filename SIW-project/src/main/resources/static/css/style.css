@@ -1,0 +1,29 @@
+:root {
+    --m-body: 1rem;
+    --c-shadow: #2e2e2e;
+}
+
+body {
+    margin: 0px var(--m-body);
+    box-shadow: 0 2px .3em var(--c-shadow);
+}
+
+header {
+    background: no-repeat left/cover url(../img/header.jpg);
+    height: 280px;
+    min-width: 180px;
+}
+
+.img-icon {
+    width: 128px;
+    height: 128px;
+}
+
+.img-person {
+    width: 48px;
+    height: 48px;
+}
+
+.card-width {
+    width: 18rem;
+}

@@ -1,0 +1,41 @@
+frag.<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles('error-frag')"></head>
+
+    <body class="mx-0 mx-md-3" th:fragment="body(titolo, errore, eccezione, percorso)">
+
+        <main class="container-fluid px-lg-5 py-3 bg-light">
+            <!-- Errore -->
+            <section class="container px-lg-5">
+                <h1 class="text-center fw-bold" th:text="${titolo}"></h1>
+                <div class="container py-2 border rounded-2 col-md-8 bg-info bg-opacity-25">
+                    <div>
+                        <span th:text="#{frag.error.errore}"></span>
+                        <span th:text="${errore}"></span>
+                    </div>
+                    <div>
+                        <span th:text="#{frag.error.causa}"></span>
+                        <span th:text="${eccezione}"></span>
+                    </div>
+                    <div>
+                        <span th:text="#{frag.error.percorso}"></span>
+                        <span th:text="${percorso}"></span>
+                    </div>
+                    <div class="container col-3 d-block">
+                        <a class="btn btn-dark" th:href="@{/index}" sec:authorize="isAnonymous()">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <span th:text="#{frag.error.indietro}"></span>
+                        </a>
+                        <a class="btn btn-dark" th:href="@{/default}" sec:authorize="isAuthenticated()">
+                            <i class="fa-solid fa-house-chimney"></i>
+                            <span th:text="#{frag.error.indietro}"></span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+    </body>
+
+</html>

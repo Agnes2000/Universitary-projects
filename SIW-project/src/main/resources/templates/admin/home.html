@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{admin.home.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+		<main class="container-fluid px-lg-5 py-3 bg-light">
+			<!-- Card di Operazione -->
+			<section class="container px-lg-5 d-flex flex-wrap justify-content-center gap-2">
+				<div class="card card-width">
+					<div class="card-body">
+						<h5 class="card-title" th:text="#{admin.home.card.registi.titolo}"></h5>
+						<p class="card-text" th:text="#{admin.home.card.registi.testo}"></p>
+						<a class="btn btn-dark" th:href="@{/admin/registi}" th:text="#{admin.home.card.registi.link}"></a>
+					</div>
+				</div>
+				<div class="card card-width">
+					<div class="card-body">
+						<h5 class="card-title" th:text="#{admin.home.card.attori.titolo}"></h5>
+						<p class="card-text" th:text="#{admin.home.card.attori.testo}"></p>
+						<a class="btn btn-dark" th:href="@{/admin/attori}" th:text="#{admin.home.card.attori.link}"></a>
+					</div>
+				</div>
+                <div class="card card-width">
+					<div class="card-body">
+						<h5 class="card-title" th:text="#{admin.home.card.film.titolo}"></h5>
+						<p class="card-text" th:text="#{admin.home.card.film.testo}"></p>
+						<a class="btn btn-dark" th:href="@{/admin/films}" th:text="#{admin.home.card.film.link}"></a>
+					</div>
+				</div>
+			</section>
+		</main>
+
+	</body>
+
+</html>

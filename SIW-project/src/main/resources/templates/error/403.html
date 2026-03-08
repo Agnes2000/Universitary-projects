@@ -1,0 +1,8 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{frag.error.titolo} + ' ' + ${status})"></head>
+
+    <body th:replace="fragments/error :: body(#{error.403.titolo}, ${error}, ${exception}, ${path})"></body>
+
+</html>

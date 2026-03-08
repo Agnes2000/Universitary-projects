@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{recensioneForm.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+		<main class="container-fluid px-lg-5 py-3 bg-light">
+            <!-- Form Biglietto -->
+            <section class="container px-lg-5">
+                <form th:action="@{'/recensioni/film/' + ${film.id}}" method="post" th:object="${recensione}">
+                    <!-- Id nascosto (serve per la modifica) -->
+                    <div><input type="hidden" th:field="*{id}"/></div>
+                    <!-- Errori Globali -->
+                    <div class="container col-12 col-md-6" th:if="${#fields.hasGlobalErrors()}">
+                        <div class="alert alert-danger" role="alert">
+                            <div th:each="err : ${#fields.globalErrors()}" th:text="${err}"></div>
+                        </div>
+                    </div>
+                    <!-- Prima riga della Form -->
+                    <div class="row mb-2">
+                        <!-- Form Nome Biglietto -->
+                        <div class="col-12 col-md-4 mb-2 mb-md-0">
+                            <div class="form-floating">
+                                <input id="titolo" type="text" class="form-control" placeholder=" " th:field="*{titolo}">
+                                <label for="titolo" th:text="#{recensioneForm.label.titolo}"></label>
+                            </div>
+                            <div class="mt-2" th:if="${#fields.hasErrors('titolo')}">
+                                <div class="alert alert-danger" role="alert" th:errors="*{titolo}"></div>
+                            </div>
+                        </div>
+                        <!-- Form Costo Biglietto -->
+                        <div class="col-12 col-md-4 mb-2 mb-md-0">
+                            <div class="form-floating">
+                                <input id="valutazione" type="number" step="1" class="form-control" placeholder=" " th:field="*{valutazione}">
+                                <label for="valutazione" th:text="#{recensioneForm.label.valutazione}"></label>
+                            </div>
+                            <div class="mt-2" th:if="${#fields.hasErrors('valutazione')}">
+                                <div class="alert alert-danger" role="alert" th:errors="*{valutazione}"></div>
+                            </div>
+                        </div>
+                        <!-- Form Quantità Biglietto -->
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="testo" type="text" class="form-control" placeholder=" " th:field="*{testo}">
+                                <label for="testo" th:text="#{recensioneForm.label.testo}"></label>
+                            </div>
+                            <div class="mt-2" th:if="${#fields.hasErrors('testo')}">
+                                <div class="alert alert-danger" role="alert" th:errors="*{testo}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Conferma -->
+                    <div class="container col-12 col-md-5 d-grid">
+                        <button class="btn btn-dark" type="submit">
+                            <i class="fa-solid fa-floppy-disk"></i>
+                            <span th:text="#{recensioneForm.salva}"></span>
+                        </button>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+	</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{profilo.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+		<main class="container-fluid px-lg-5 py-3 bg-light">
+            <section class="container px-lg-5">
+                <div class="d-flex flex-wrap align-items-center bg-white p-3 border">
+                    <div class="align-content-between ms-3" th:object="${utente}">
+                        <div th:text="#{profilo.utenteCard.nome} + ' ' + *{nome}"></div>
+                        <div th:text="#{profilo.utenteCard.cognome} + ' ' + *{cognome}"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- Recensioni dell'utente -->
+            <section class="container px-lg-5 table-responsive" sec:authorize="hasAuthority('UTENTE')">
+                <table class="table table-striped table-sm text-center">
+                    <thead>
+                        <tr class="table-dark">
+                            <th scope="col" th:text="#{profilo.recensioneTable.titolo}"></th>
+                            <th scope="col" th:text="#{profilo.recensioneTable.film}"></th>
+                            <th scope="col" th:text="#{profilo.recensioneTable.val}"></th>
+                            <th scope="col"></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr th:each="recensione : ${utente.recensioni}" class="align-middle">
+                            <td th:text="${recensione.titolo}"></td>
+                            <td th:text="${recensione.film.nome}"></td>
+                            <td th:text="${recensione.valutazione}"></td>
+                            <td>
+                                <a class="btn btn-warning" th:href="@{'/recensioni/' + ${recensione.id} + '/update'}">
+                                    <i class="fa-solid fa-wrench"></i>
+                                    <span th:text="#{profilo.recensioneTable.modifica}"></span>
+                                </a>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+
+	</body>
+
+</html>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{admin.attori.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+		<main class="container-fluid px-lg-5 py-3 bg-light">
+            <section class="container px-lg-5">
+                <h1 class="text-center" th:text="#{admin.attoreForm.titolo}"></h1>
+                <form th:action="@{/admin/attori/create}" method="post" th:object="${attore}" enctype="multipart/form-data">
+                    <!-- Errori Globali -->
+                    <div class="row mt-3">
+                        <div class="col col-md-4"></div>
+                        <div class="col-12 col-md-4" th:if="${#fields.hasGlobalErrors()}">
+                            <div class="alert alert-danger">
+                                <div th:each="err : ${#fields.globalErrors()}" th:text="${err}"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Id nascosto -->
+                    <div><input type="hidden" th:field="*{id}"/></div>
+                    <!-- Form attore nome -->
+                    <div class="row mt-3">
+                        <div class="col col-md-4"></div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="nome" type="text" class="form-control" placeholder=" " th:field="*{nome}">
+                                <label for="nome" th:text="#{admin.attoreForm.nome}"></label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-1 mt-md-0" th:if="${#fields.hasErrors('nome')}">
+                            <div class="alert alert-danger" th:errors="*{nome}"></div>
+                        </div>
+                    </div>
+                    <!-- Form attore cognome -->
+                    <div class="row my-3">
+                        <div class="col col-md-4"></div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="cognome" type="text" class="form-control" placeholder=" " th:field="*{cognome}">
+                                <label for="cognome" th:text="#{admin.attoreForm.cognome}"></label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-1 mt-md-0" th:if="${#fields.hasErrors('cognome')}">
+                            <div class="alert alert-danger" th:errors="*{cognome}"></div>
+                        </div>
+                    </div>
+                    <!-- Form Data di Nascita -->
+                    <div class="row my-3">
+                        <div class="col col-md-4"></div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="ddn" type="date" class="form-control" placeholder=" " th:field="*{dataDiNascita}">
+                                <label for="ddn" th:text="#{admin.attoreForm.dataDiNascita}"></label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-1 mt-md-0" th:if="${#fields.hasErrors('dataDiNascita')}">
+                            <div class="alert alert-danger" th:errors="*{dataDiNascita}"></div>
+                        </div>
+                    </div>
+                    <!-- Form Data di Morte -->
+                    <div class="row my-3">
+                        <div class="col col-md-4"></div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="ddm" type="date" class="form-control" placeholder=" " th:field="*{dataDiMorte}">
+                                <label for="ddm" th:text="#{admin.attoreForm.dataDiMorte}"></label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-1 mt-md-0" th:if="${#fields.hasErrors('dataDiMorte')}">
+                            <div class="alert alert-danger" th:errors="*{dataDiMorte}"></div>
+                        </div>
+                    </div>
+                    <!-- Form Immagine Attore-->
+                    <div class="row my-3">
+                        <div class="col col-md-4"></div>
+                        <div class="col-12 col-md-4">
+                            <div class="form-floating">
+                                <input id="img" type="file" name="image" class="form-control" placeholder=" " accept="image/png, image/jpeg">
+                                <label for="img" th:text="#{admin.attoreForm.img}"></label>
+                            </div>
+                        </div>
+                        <div class="col-12 col-md-4 mt-1 mt-md-0"></div>
+                    </div>
+                    <!-- Conferma -->
+                    <div class="row">
+                        <div class="col col-md-4"></div>
+                        <div class="col-12 col-md-4 d-grid">
+                            <button class="btn btn-dark" type="submit">
+                                <i class="fa-solid fa-floppy-disk"></i>
+                                <span th:text="#{admin.attoreForm.salva}"></span>
+                            </button>
+                        </div>
+                    </div>
+                </form>
+            </section>
+        </main>
+
+	</body>
+
+</html>

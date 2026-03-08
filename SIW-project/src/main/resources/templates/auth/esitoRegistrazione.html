@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head th:replace="fragments/base :: headerfiles(#{auth.esitoRegistrazione.titolo})"></head>
+
+    <body th:replace="fragments/base :: body(~{::main})">
+
+		<main class="container-fluid px-lg-5 py-3 bg-light">
+			<section class="container px-lg-5">
+				<h4 class="display-6 text-center" th:text="#{auth.esitoRegistrazione.titolo}"></h4>
+				<div class="container col-md-6">
+					<div class="alert alert-success text-center">
+						<h4 th:text="#{auth.esitoRegistrazione.esito}"></h4>
+					</div>
+				</div>
+				<div class="container col-2 d-block">
+					<a class="btn btn-dark" th:href="@{/index}">
+						<i class="fa-regular fa-house-person-return"></i>
+						<span th:text="#{auth.esitoRegistrazione.index}"></span>
+					</a>
+				</div>
+			</section>
+		</main>
+
+	</body>
+
+</html>
