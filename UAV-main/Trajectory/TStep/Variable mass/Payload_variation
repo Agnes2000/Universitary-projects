@@ -1,0 +1,31 @@
+function m = payload_variation(t)
+    % Parametri
+    m_base = 2.0;       % massa di base [kg]
+    delta_max = 1.0;    % variazione massima del payload [kg]
+
+    % Variabili persistenti per simulare rumore filtrato
+    persistent payload prev_t
+    if isempty(payload)
+        payload = 0.5;   % inizializza a metà range
+        prev_t = 0;
+    end
+
+    dt = t - prev_t;
+    if dt <= 0
+        dt = 0.01; % passo temporale minimo di sicurezza
+    end
+
+    % Rumore casuale smussato (random walk filtrato)
+    noise = 0.1 * randn();         % rumore Gaussiano
+    alpha = 0.95;                  % coefficiente di smoothing
+    payload = alpha * payload + (1 - alpha) * (payload + noise * dt);
+
+    % Limita payload tra 0 e 1
+    payload = min(max(payload, 0), delta_max);
+
+    % Massa totale
+    m = m_base + payload;
+
+    prev_t = t;
+    
+end

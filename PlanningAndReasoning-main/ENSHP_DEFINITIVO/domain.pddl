@@ -1,0 +1,46 @@
+(define (domain transport)
+  (:requirements :strips :typing :fluents :negative-preconditions)
+  (:types person stop vehicle - object)
+  (:predicates (at ?p - person ?s - stop)
+               (onboard ?p - person ?v - vehicle)
+               (vehicle-at ?v - vehicle ?s - stop)
+               (can-travel ?v - vehicle ?from - stop ?to - stop)
+               (available ?v - vehicle)
+               (avoid ?p - person ?v - vehicle))
+  (:functions (total-time) 
+              (travel-time ?v - vehicle ?from - stop ?to - stop)
+              (departure-time ?v - vehicle ?s - stop)
+              (delay ?v - vehicle)
+)
+
+  (:action wait
+    :parameters (?p - person ?s - stop)
+    :precondition (at ?p ?s)
+    :effect (increase (total-time) 1))
+
+  (:action board
+    :parameters (?p - person ?v - vehicle ?s - stop)
+    :precondition (and (at ?p ?s)
+                       (vehicle-at ?v ?s)
+                       (available ?v)
+                       (not (avoid ?p ?v))
+                       (= (total-time) (departure-time ?v ?s)))
+    :effect (and (not (at ?p ?s)) (onboard ?p ?v)))
+
+  (:action alight
+    :parameters (?p - person ?v - vehicle ?s - stop)
+    :precondition (and (onboard ?p ?v)
+                       (vehicle-at ?v ?s))
+    :effect (and (not (onboard ?p ?v)) (at ?p ?s)))
+
+  (:action move-vehicle
+    :parameters (?v - vehicle ?from - stop ?to - stop)
+    :precondition (and (vehicle-at ?v ?from)
+                       (can-travel ?v ?from ?to)
+                       ;(available ?v)
+                       (>= (total-time) (departure-time ?v ?from)))
+    :effect (and (not (vehicle-at ?v ?from))
+                 (vehicle-at ?v ?to)
+                 (increase (total-time) (travel-time ?v ?from ?to))
+                 (increase (total-time) (delay ?v))))
+)
