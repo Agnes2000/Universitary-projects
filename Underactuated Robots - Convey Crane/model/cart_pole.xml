@@ -1,0 +1,61 @@
+<mujoco model="convey_crane">
+
+  <option gravity="0 0 -9.8" integrator="RK4" timestep="0.001"/>
+
+  <visual>
+    <headlight ambient="0.4 0.4 0.4" diffuse="0.8 0.8 0.8"/>
+  </visual>
+
+  <asset>
+    <texture name="grid" type="2d" builtin="checker" rgb1="0.9 0.9 0.9" rgb2="0.95 0.95 0.95" width="300" height="300"/>
+    <material name="grid_mat" texture="grid" texrepeat="10 10" reflectance="0.0"/>
+  </asset>
+
+  <worldbody>
+    <!-- Pavimento a griglia leggera, in secondo piano rispetto al pendolo:
+         abbassato a z=-1 (ben sotto il punto più basso raggiungibile dal
+         bob, z=0.5) e reso semi-trasparente (alpha=0.35) -->
+    <geom name="floor" type="plane" size="10 10 0.1" pos="0 0 -1"
+          material="grid_mat" rgba="1 1 1 0.35"
+          contype="0" conaffinity="0"/>
+
+    <!-- Binario visivo, sollevato a CART_HEIGHT = 1.5 (solo grafica, non fisico) -->
+    <geom name="rail" type="cylinder" fromto="-6 0 1.5  6 0 1.5"
+          size="0.01" rgba="0.5 0.5 0.5 0.3"
+          contype="0" conaffinity="0"/>
+
+    <!-- CARRELLO: si muove lungo x, sollevato a z=1.5 sopra il pavimento -->
+    <!-- NOTA: lo slide joint trasla solo lungo l'asse locale x del body;
+         spostare pos in z e' un puro offset di rendering, non altera
+         in alcun modo la dinamica (x, theta) del sistema. -->
+    <body name="cart" pos="0 0 1.5">
+      <joint name="slider" type="slide" axis="1 0 0"
+             limited="false" damping="0.0"/>
+      <geom name="cart_body" type="box" size="0.2 0.1 0.1"
+            rgba="0.2 0.4 0.8 1" mass="1.0"/>
+
+      <!-- PENDOLO: appeso al carrello, ruota attorno a y -->
+      <body name="pendulum" pos="0 0 0">
+        <joint name="pin" type="hinge" axis="0 1 0"
+               pos="0 0 0" limited="false" damping="0.0"/>
+        <!-- Asta quasi senza massa: solo struttura visiva -->
+        <geom name="rod" type="capsule" fromto="0 0 0  0 0 -1.0" size="0.01" rgba="0.8 0.3 0.2 1" mass="0.001"/>
+        <geom name="bob" type="sphere" pos="0 0 -1.0" size="0.08" rgba="1 0.8 0 1" mass="1.0"/>
+      </body>
+    </body>
+  </worldbody>
+
+  <actuator>
+    <!-- Solo il carrello è attuato: forza orizzontale -->
+    <motor name="force" joint="slider"
+           gear="1" ctrllimited="true" ctrlrange="-50 50"/>
+  </actuator>
+
+  <sensor>
+    <jointpos name="x"   joint="slider"/>
+    <jointpos name="th"  joint="pin"/>
+    <jointvel name="dx"  joint="slider"/>
+    <jointvel name="dth" joint="pin"/>
+  </sensor>
+
+</mujoco>
