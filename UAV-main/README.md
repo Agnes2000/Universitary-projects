@@ -1,71 +1,57 @@
-# UAV
+# Adaptive Control of a Quadrotor (ASMC)
 
-🔷 GRUPPO 1 – Traiettoria desiderata a gradino (costante per un certo tempo, poi cambia bruscamente)
+A university project focused on the development of an **adaptive control system for a quadrotor operating in complex environments**.
 
-Test 1.1:
-✓ Massa costante
-✓ Disturbo costante
-✓ Traiettoria a step
+The system was implemented in MATLAB/Simulink and is designed to ensure accurate trajectory tracking under uncertainties and external disturbances.
 
-Test 1.2:
-✓ Massa costante
-✓ Disturbo sinusoidale
-✓ Traiettoria a step
+## Features / Implemented
 
-Test 1.3:
-✓ Massa variabile (random walk o gradino)
-✓ Disturbo costante
-✓ Traiettoria a step
+- **Adaptive Sliding Mode Control (ASMC):**  
+  Robust control strategy capable of handling model uncertainties and disturbances.
 
-Test 1.4:
-✓ Massa variabile
-✓ Disturbo sinusoidale
-✓ Traiettoria a step
+- **Nonlinear UAV dynamics modeling:**  
+  Realistic representation of quadrotor dynamics.
 
-─────────────────────────────
-🔷 GRUPPO 2 – Traiettoria desiderata sinusoidale (come p_d = [sin(t), cos(t), 1 + sin(0.5t)])
+- **Disturbance simulation:**  
+  External disturbances such as wind and vibrations were modeled and tested.
 
-Test 2.1:
-✓ Massa costante
-✓ Disturbo costante
-✓ Traiettoria sinusoidale
+- **Payload variation handling:**  
+  The controller adapts to unknown and time-varying mass conditions.
 
-Test 2.2:
-✓ Massa costante
-✓ Disturbo sinusoidale
-✓ Traiettoria sinusoidale
+- **Trajectory tracking:**  
+  Implementation of different reference trajectories and evaluation of tracking performance.
 
-Test 2.3:
-✓ Massa variabile
-✓ Disturbo costante
-✓ Traiettoria sinusoidale
+- **Control tuning:**  
+  Optimization of control parameters to improve stability and performance.
 
-Test 2.4:
-✓ Massa variabile
-✓ Disturbo sinusoidale
-✓ Traiettoria sinusoidale
+## Objective / Goal
 
-─────────────────────────────
-🔷 GRUPPO 3 – Traiettoria desiderata randomica (come quella generata con rumore gaussiano smussato)
+To design and validate an adaptive and robust control system capable of ensuring stable and accurate quadrotor trajectory tracking in the presence of uncertainties and dynamic environmental conditions.
 
-Test 3.1:
-✓ Massa costante
-✓ Disturbo costante
-✓ Traiettoria randomica
+## Technologies
 
-Test 3.2:
-✓ Massa costante
-✓ Disturbo sinusoidale
-✓ Traiettoria randomica
+- MATLAB  
+- Simulink  
+- Control Systems  
+- Nonlinear System Modeling  
 
-Test 3.3:
-✓ Massa variabile
-✓ Disturbo costante
-✓ Traiettoria randomica
+## How to Run
 
-Test 3.4:
-✓ Massa variabile
-✓ Disturbo sinusoidale
-✓ Traiettoria randomica
+1. Open the project in MATLAB.  
+2. Load the Simulink model (`.slx` file).  
+3. Run the simulation.  
+4. Analyze the system response through the generated plots and outputs.
 
-─────────────────────────────
+## Results
+
+The system demonstrated:
+- Stable behavior under different operating conditions  
+- Robustness to external disturbances  
+- Effective adaptation to payload variations  
+- Accurate trajectory tracking  
+
+## Notes / Learnings
+
+This project allowed me to apply theoretical concepts in **control systems and nonlinear dynamics**, while developing practical skills in **simulation, modeling, and performance evaluation of complex dynamic systems**.
+
+It also strengthened my interest in **robotics and control engineering**.
